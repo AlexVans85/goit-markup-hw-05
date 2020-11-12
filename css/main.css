@@ -11,7 +11,7 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --triple-bg-color: #2f303a;
-  --time-animation: 3s;
+  --time-animation: 1s;
 }
 
 html {
@@ -130,6 +130,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav {
@@ -164,6 +165,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .contacts {
@@ -537,6 +539,7 @@ ul {
   letter-spacing: 0.03em;
   background-color: var(--secondary-bg-color);
   justify-content: center;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter .title-button:hover,
@@ -681,9 +684,11 @@ ul {
   margin-top: 30px;
   /* background-color: red; */
   width: calc(100% / 3 - 30px);
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-list .item:hover {
+.work-list .item:hover,
+.work-list .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -773,13 +778,15 @@ img {
   padding-bottom: 20px;
   padding-right: 63px;
   padding-left: 63px;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list .item:hover {
   border: 1px solid var(--accent-color);
 }
 
-.client-list .item:hover .logo-icons-svg {
+.client-list .item:hover .logo-icons-svg,
+.client-list .item:focus .logo-icons-svg {
   fill: var(--accent-color);
 }
 
@@ -807,6 +814,7 @@ img {
   height: 12px;
   fill: var(--primary-text-color);
   vertical-align: middle;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-icons-svg {
@@ -814,6 +822,7 @@ img {
   height: 16px;
   fill: var(--primary-text-color);
   vertical-align: middle;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-list {
@@ -842,14 +851,12 @@ img {
 
 .social-icons-svg {
   fill: var(--primary-text-color);
-}
-
-.btn:hover {
-  fill: var(--accent-color);
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-icons-svg {
   fill: var(--primary-text-color);
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-list-footer {
@@ -867,9 +874,11 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-list-item-footer:hover {
+.socials-list-item-footer:hover,
+.socials-list-item-footer:focus {
   background-color: var(--accent-color);
 }
 
@@ -893,25 +902,21 @@ img {
 }
 
 .container-footer {
-  outline: 2px solid yellow;
   display: flex;
 }
 
 .container-footer-adres {
-  outline: 1px solid red;
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
 }
 
 .container-footer-socials {
-  outline: 1px solid red;
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
 }
 
 .container-footer-form {
-  outline: 1px solid red;
-  flex-basis: calc((100% / 2 - 60px));
+  width: calc((100% - 30px) / 2);
 }
 
 .footer-input {
@@ -927,6 +932,7 @@ img {
   line-height: 1.25;
   align-items: center;
   letter-spacing: 0.03em;
+  width: 358px;
 }
 
 .footer-form {
@@ -956,6 +962,7 @@ img {
   background-color: var(--accent-color);
   background-image: url(../img/logotg.svg);
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 .exmpl-img {
@@ -1019,6 +1026,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  transition: all var(--time-animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icons-svg {
